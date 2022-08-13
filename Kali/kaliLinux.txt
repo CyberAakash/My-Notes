@@ -1,0 +1,25 @@
+//change root logo
+sed -i 's/prompt_symbol=㉿/prompt_symbol=😜/' ~.zshrc
+source .zshrc
+
+//stylish name
+sudo apt install figlet
+sudo apt install figlet lolcat
+figlet -f big "CyberAakash" | lolcat
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+PASTE IT IN 
+	1. nano /root/.bashrc
+	2. nano .zshrc
+
+
+//MACCHANGER EVERTIME
+macchanger -r eth0
+!!!!!!!!!!!!paste it in " crontab -e "
+		-choose option 1
+		
+		
+		
+git clone https://github.com/xero/figlet-fonts.git
+sudo cp figlet-fonts/* /usr/share/figlet/.
+
+

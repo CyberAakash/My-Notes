@@ -1,0 +1,30 @@
+//change root logo
+sed -i 's/prompt_symbol=㉿/prompt_symbol=😜/' ~.zshrc
+source .zshrc
+
+//stylish name
+sudo apt install figlet
+sudo apt install figlet lolcat
+figlet -f big "CyberAakash" | lolcat
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+PASTE IT IN 
+	1. nano /root/.bashrc
+	2. nano .zshrc
+
+
+//MACCHANGER EVERTIME
+macchanger -r eth0
+!!!!!!!!!!!!paste it in " crontab -e "
+		-choose option 1
+		
+		
+		
+//Local talk
+terminal 1: nc -l -p 1010
+terminal 2: nc 10.0.2.15 1010
+//then talk.......i.e., client server
+
+
+
+
+

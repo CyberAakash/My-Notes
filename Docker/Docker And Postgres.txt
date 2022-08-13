@@ -1,0 +1,73 @@
+DOCKER
+----------------------------------------------
+
+////////////////////////////////////////////////
+
+docker login
+
+docker run --name postgres -p 5432:5432 -e POSTGRES_PASSWORD=hack2know -d postgres
+
+docker ps
+
+docker stop name/id
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+> docker pull postgres:alpine
+
+> docker images
+
+> docker run --name postgres-a -e POSTGRES_PASSWORD=hack2know -d -p 5432:5432 postgres:alpine
+
+> docker ps
+
+> docker stop name/id
+
+> docker exec -it postgres-a bash
+
+bash-5.1# pwd
+
+bash-5.1# ls
+
+{  POSTGRES SQL  }>>>>>>>>>>>>>>
+----------------------------------------------
+bash-5.1# psql -h localhost -p 5432 -U postgres
+
+                     OR
+
+bash-5.1# psql -U postgres
+
+postgres=# \du
+
+postgres=# create database test;
+
+postgres=# \l
+
+postgres=# \c test
+
+test=# \d
+
+test=# create table student();
+
+||  note create table full command not here.....go research and paste here  ||
+
+test=# \dt                        //desc
+
+test=# \d+ student            //select
+
+[  NOTE : EXTENSION DOWNLOAD
+   
+create extension if not exists "uuid-ossp";
+
+]
+
+test=# insert into student (id, name, course) values (uuid_generate_v1(), 'Aakash', 'Developer');
+
+ test=# select * from student;
+
+
+
+
+----------------------------------------------<<<<<<<<<<<<<<<<{POSTGRES SQL}
+
+////////////////////////////////////////////////

@@ -1,0 +1,71 @@
+/*  ------------------------------------------------------------------------------------------------  */
+
+git init      //initialize git
+
+/*  ------------------------------------------------------------------------------------------------  */
+
+
+git config --global user.email aakashvnth@gmail.com      //set email addr
+
+git config --global user.name CyberAakash      //set username
+
+git config --global core.editor gedit      //git editor
+
+git config --list      //to list the details we done before
+
+/*  ------------------------------------------------------------------------------------------------  */
+
+gedit filename.extension &      //open an editing file  (ex : mypage.html)
+vi or open filename.extension
+
+git add filename.extension      //adding file to git
+git add .
+
+git status      //to see status of files
+
+git commit -m "name of commit"     //to commit the changes
+
+git log      //it shows commit hash value and username,email,date,time with commit msg
+
+git checkout filename.extension    //to go back to previous version...(This should be done before add and commit.)
+
+git rm --cached -r .        //to undo cganges
+
+git diff filename.extension        // to know the differance between current and previous commit
+
+/*  ------------------------------------------------------------------------------------------------  */
+
+/*  Push local repository to github  */
+
+git remote add origin https://github.com/cyberaakash/myproject.git     //setting origin
+
+git push -u origin master                   //pushing local repository to online repository
+
+/*  ------------------------------------------------------------------------------------------------  */
+
+/*  Git Branch and Merge */
+
+git branch brabch_name     // to create a new branch like master branch
+
+git branch                 // to display all branches
+
+git checkout branch_name   // to change between branch
+
+git merge new_branch_name      //to merge new branch with master branch
+
+
+/*  ------------------------------------------------------------------------------------------------  */
+
+
+
+
+*********************************************************************************************************************************************************************************************
+
+note: " --global "  is used to make repository global or common.  If u want to create a private repository, do not use --global .
+
+note :  (GIT commit)
+        - 40 alpha-numeric chars
+        - git commit are identified by SHA-1 hash
+
+
+*********************************************************************************************************************************************************************************************
